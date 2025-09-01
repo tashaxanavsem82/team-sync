@@ -9,7 +9,7 @@ const io = socketIo(server);
 app.use(express.static('public'));
 
 io.on('connection', (socket) => {
-  console.log('New client connected');
+  console.log('A new client has connected');
   socket.on('disconnect', () => {
     console.log('Client disconnected');
   });
