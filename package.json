@@ -22,6 +22,6 @@
     "url": "git+https://github.com/your_username/team-sync.git"
   },
   "keywords": ["collaboration", "communication", "tool"],
-  "author": "Your Name",
+  "author": "John Doe",
   "license": "MIT"
 }
