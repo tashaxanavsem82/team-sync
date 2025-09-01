@@ -14,9 +14,9 @@ app.get('/health', (req, res) => {
 });
 
 io.on('connection', (socket) => {
-    console.log('A new client has connected');
+    console.log(`A new client has connected: ${socket.id}`);
     socket.on('disconnect', () => {
-        console.log('Client disconnected');
+        console.log(`Client disconnected: ${socket.id}`);
     });
 });
 
