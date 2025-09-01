@@ -9,13 +9,13 @@ const io = socketIo(server);
 app.use(express.static('public'));
 
 io.on('connection', (socket) => {
-  console.log('A new client has connected');
-  socket.on('disconnect', () => {
-    console.log('Client disconnected');
-  });
+    console.log('A new client has connected');
+    socket.on('disconnect', () => {
+        console.log('Client disconnected');
+    });
 });
 
 const PORT = process.env.PORT || 4000;
 server.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+    console.log(`Server running on port ${PORT}`);
 });
