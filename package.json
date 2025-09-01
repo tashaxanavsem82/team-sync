@@ -1,0 +1,27 @@
+{
+  "name": "team-sync",
+  "version": "1.0.0",
+  "description": "A collaborative tool for unified team communication.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo 'No tests yet'",
+    "build": "webpack"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.0.0",
+    "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "webpack": "^5.0.0",
+    "webpack-cli": "^4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your_username/team-sync.git"
+  },
+  "keywords": ["collaboration", "communication", "tool"],
+  "author": "Your Name",
+  "license": "MIT"
+}
