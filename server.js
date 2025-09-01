@@ -10,7 +10,7 @@ app.use(express.static('public'));
 
 // Health check endpoint
 app.get('/health', (req, res) => {
-    res.status(200).json({ message: 'OK', server: 'MyServer', version: '1.0.0', timestamp: new Date() });
+    res.status(200).json({ message: 'OK', server: 'MyServer', version: '1.0.1', timestamp: new Date() });
 });
 
 io.on('connection', (socket) => {
